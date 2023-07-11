@@ -12,9 +12,12 @@
 
 Для установки нужно установить все нужные пакеты командой `pip install -r requirements.txt`
 
-Создать в корне папки marketplace файл `.env` и указать в нем `SECRET_KEY='django-insecure-gg$g5o9m0jjpz2gu*h&fs62i97(2m_7ky9q4!6dt*i2)9ol^@='`
+Создать в корне папки marketplace файл `.env` и указать в нем секретный ключ
 
-Далее нужно создать и применить миграции командами `python manage.py makemigrations` и `python manage.py migrate`, при возникновении ошибки во время применения миграций следует указать флаг --fake `python manage.py migrate --fake`
+`SECRET_KEY='django-insecure-gg$g5o9m0jjpz2gu*h&fs62i97(2m_7ky9q4!6dt*i2)9ol^@='`
+
+Далее нужно создать и применить миграции командами `python manage.py makemigrations` и `python manage.py migrate`, при возникновении ошибки во время применения миграций следует указать флаг --fake 
+`python manage.py migrate --fake`
 
 Для наглядности в проекте присутствуют фикстуры, устанавливать их следует в таком порядке:
 

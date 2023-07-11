@@ -1,7 +1,5 @@
-from django.db.migrations import serializer
 from django.db.models import Avg
 from rest_framework import serializers
-from rest_framework.serializers import Serializer
 
 from .models import Category, Product, Tag, Order, Review
 
@@ -218,6 +216,8 @@ class OrderSerializer(serializers.ModelSerializer):
 
     # products = ProductSerializer(many=True)
 
+
+
     class Meta:
         model = Order
         fields = ('id',
@@ -254,3 +254,5 @@ class OrderSerializer(serializers.ModelSerializer):
 
     def get_totalCost(self, obj):
         return obj.total_cost
+
+

@@ -1,26 +1,7 @@
 from rest_framework import serializers
 
-from marketplace.settings import MEDIA_URL
 # Подключаем модель user
 from .models import User, Profile
-
-
-# class ImageSerializer(serializers.Serializer):
-#     src = serializers.ImageField()
-#     alt = serializers.CharField(max_length=50)
-#
-#     # def to_representation(self, instance):
-#     #     representation = super().to_representation(instance)
-#     #     print(representation)
-#     #     if instance.src.url == '':
-#     #         representation['src'] = ''
-#     #     else:
-#     #         representation['src'] = instance.src.url
-#     #     representation['alt'] = instance.alt
-#
-#     #
-#     # def to_internal_value(self, data):
-#     #     ...
 
 
 class UserRegistrSerializer(serializers.ModelSerializer):

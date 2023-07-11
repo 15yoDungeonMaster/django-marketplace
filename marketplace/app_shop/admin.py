@@ -18,6 +18,7 @@ class ProductImagesInline(admin.TabularInline):
     model = ProductImage
     extra = 1
 
+
 class ProductTagsInline(admin.StackedInline):
     model = Product.tags.through
     extra = 1

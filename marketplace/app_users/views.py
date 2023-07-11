@@ -2,15 +2,13 @@ import json
 
 from django.contrib.auth import logout, login
 from django.contrib.auth.handlers.modwsgi import check_password
-from rest_framework import status
-from rest_framework.authtoken.models import Token
 from rest_framework.exceptions import ValidationError
-# Подключаем компонент для ответа
-from rest_framework.response import Response
 # Подключаем компонент для создания данных
-from rest_framework.generics import CreateAPIView, UpdateAPIView
+from rest_framework.generics import CreateAPIView
 # Подключаем компонент для прав доступа
 from rest_framework.permissions import AllowAny, IsAuthenticated
+# Подключаем компонент для ответа
+from rest_framework.response import Response
 from rest_framework.views import APIView
 
 # Подключаем компонент Token

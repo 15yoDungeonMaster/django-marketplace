@@ -1,12 +1,11 @@
 from datetime import datetime
+from decimal import Decimal
 
 from django.db.models import Avg
 from rest_framework import pagination
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
-from decimal import Decimal
-
 from rest_framework.views import APIView
 
 from cart.cart import Cart

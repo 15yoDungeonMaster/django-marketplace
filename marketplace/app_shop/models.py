@@ -1,11 +1,7 @@
-from django.db.models import Avg
-from phonenumbers.unicode_util import Category
-from unicodedata import category
-
 from django.db import models
+from django.db.models import Avg
 
 from app_users.models import User
-from marketplace.settings import MEDIA_URL, MEDIA_ROOT
 
 
 # Пути к media файлам

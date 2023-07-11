@@ -1,9 +1,7 @@
 from django.contrib.auth.base_user import AbstractBaseUser, BaseUserManager
-from phonenumber_field.modelfields import PhoneNumberField
-from django.contrib.auth.models import AbstractUser, PermissionsMixin
+from django.contrib.auth.models import PermissionsMixin
 from django.db import models
-
-from marketplace.settings import MEDIA_URL
+from phonenumber_field.modelfields import PhoneNumberField
 
 
 # Create your models here.
